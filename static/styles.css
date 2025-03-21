@@ -1,0 +1,177 @@
+body {
+    background-color: #f4f7fa;
+    font-family: 'Cairo', sans-serif;
+    color: #333;
+}
+
+h2 {
+    color: #2c3e50;
+    font-weight: 700;
+}
+
+.card {
+    background-color: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-tabs .nav-link {
+    font-weight: 700;
+    color: #2c3e50;
+    border-radius: 10px 10px 0 0;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #34495e;
+}
+
+.form-select, .form-control {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    padding: 8px 30px 8px 8px;
+    font-size: 1rem;
+    background-position: right 10px center;
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="%2334495e" viewBox="0 0 16 16"><path d="M8 12L0 4h16z"/></svg>');
+    background-repeat: no-repeat;
+    background-size: 12px;
+    text-align: right;
+}
+
+#date, #editDate {
+    direction: rtl; /* ضمان عرض التاريخ من اليمين */
+    text-align: right;
+}
+
+.btn-primary {
+    background-color: #2980b9;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: #1c5f8c;
+}
+
+.btn-outline-primary {
+    border-color: #2980b9;
+    color: #2980b9;
+}
+
+.btn-outline-primary:hover {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+.btn-success {
+    background-color: #27ae60;
+    border: none;
+    border-radius: 8px;
+}
+
+.btn-success:hover {
+    background-color: #1e8449;
+}
+
+.btn-previous-date {
+    background-color: #27ae60;
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.btn-previous-date:hover {
+    background-color: #1e8449;
+}
+
+.btn-warning {
+    margin-left: 5px;
+}
+
+.btn-danger {
+    margin-left: 5px;
+}
+
+.table {
+    font-size: 0.95rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table-dark {
+    background-color: #2c3e50;
+}
+
+/* تحسين قائمة الاقتراحات للنص التنبؤي */
+#suggestions, #editSuggestions {
+    max-height: 200px;
+    overflow-y: auto;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    background-color: white;
+}
+
+#suggestions .list-group-item, #editSuggestions .list-group-item {
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#suggestions .list-group-item:hover, #editSuggestions .list-group-item:hover {
+    background-color: #e0f7fa;
+}
+
+.records-container {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+}
+
+.totals {
+    position: sticky;
+    bottom: 0;
+    background-color: #fff;
+    padding: 10px;
+    border-top: 1px solid #ced4da;
+}
+
+.total-value {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.balance {
+    color: #e74c3c;
+    font-weight: 700;
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 10px;
+    }
+    .form-select, .form-control, .btn {
+        font-size: 0.9rem;
+        padding: 6px 25px 6px 6px;
+    }
+    .d-flex {
+        flex-direction: column;
+        gap: 10px !important;
+    }
+    .card {
+        padding: 15px !important;
+    }
+    .table {
+        font-size: 0.85rem;
+    }
+}
